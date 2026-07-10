@@ -1,4 +1,4 @@
-FROM --platform=linux/amd64 golang:1.24-alpine3.21 AS build
+FROM --platform=linux/amd64 golang:1.25-alpine3.21 AS build
 
 COPY . ./
 RUN go mod download \
